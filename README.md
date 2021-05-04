@@ -6,7 +6,7 @@ Hello! I wanted to share some of my work starting today! You will learn how to c
 
 Create a ScriptableObject on Project folder using **Create > ScriptableObjects > DialogueSystem**
 
-![Scriptable Object Example](https://imgur.com/a/GSDloxo)
+![Scriptable Object Example](https://i.imgur.com/turtXIL.png)
 
 ## Script side
 
