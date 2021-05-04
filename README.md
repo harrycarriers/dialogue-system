@@ -30,7 +30,7 @@ private IEnumerator StartDialogue()
     var firstDialog = dialogueSystem.contexts[0].dialogue;
 
     // Or loop through
-    for(int i=0;i<dialogue.contexts.length;i++)
+    for(int i=0;i<dialogueSystem.contexts.length;i++)
     {
         var dialogue = dialogueSystem.contexts[i].dialogue;
         yield return new WaitForSeconds(dialogueSystem.contexts[i].contextReadTime);
@@ -59,11 +59,11 @@ private IEnumerator StartDialogue()
     // Get sprite for talking person
     var talkerSprite = dialogueSystem[currentSequence].talkerSprite;
 
-    // Or loop through
-    for(int i=0;i<dialogue.contexts.length;i++)
+    // Loop through
+    for(int i=0;i<dialogueSystem[currentSequence].contexts.length;i++)
     {
-        var dialogue = dialogueSystem.contexts[i].dialogue;
-        yield return new WaitForSeconds(dialogueSystem.contexts[i].contextReadTime);
+        var dialogue = dialogueSystem[currentSequence].contexts[i].dialogue;
+        yield return new WaitForSeconds(dialogueSystem[currentSequence].contexts[i].contextReadTime);
     }
      
     // ...
